@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fd4d3f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 450px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Space Mono', monospace;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.paassword {
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.material-icons {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.pass-indicator {
+    width: 100%;
+    height: 4px;
+    position: relative;
+    background: #dfdfdf;
+    margin-top: 0.75rem;
+    border-radius: 25px;
+    transition: width 0.3s ease;
+}
+
+.pass-indicator::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    background: #f1c80b;
+    transition: width 0.3s ease;
+}
+
+.pass-indicator#weak::before {
+    width: 20%;
+    background: #e64a4a;
+}
+
+.pass-indicator#medium::before {
+    width: 50%;
+    background: #f1c80b;
+}
+
+.pass-indicator#strong::before {
+    width: 100%;
+    background: green;
+}
+
+.pass-length {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.pass-length .details {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.pass-length .title {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.pass-length span {
+    font-weight: bold;
+}
+
+.slider {
+    flex-grow: 2;
+}
+
+.pass-settings .title {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.options {
+    list-style: none;
+    padding: 0;
+}
+
+.option {
+    margin-bottom: 5px;
+}
+
+.option input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.generate-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fd4d3f;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.generate-btn:hover {
+    background-color: #e63a2d;
+}
+
+.options .option:first-child {
+    pointer-events: none;
+}
+
+.options .option:first-child input {
+    opacity: 0.7;
+}
+
+
+.pass-indicator::before {
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.pass-indicator#weak::before {
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.pass-indicator#medium::before {
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.pass-indicator#strong::before {
+    transition: width 0.3s ease, background-color 0.3s ease;
+}

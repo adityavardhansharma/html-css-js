@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script type="text/javascript" src="script6.js" defer></script>
+  <title>Password Generator</title>
+</head>
+<body>
+<div class="container">
+  <h2>Password Generator</h2>
+  <div class="paassword">
+    <div class="input-box">
+    <input type="text" id="password" placeholder="Your Password" value="vn589y789./#ABegCh4onbopu4gh" disabled>
+      <span class="material-icons">copy_all</span>
+    </div>
+    <div class="pass-indicator"></div>
+    <div class="pass-length">
+      <div class="details">
+        <label class="title">Password Length</label>
+        <span></span>
+      </div>
+      <input type="range" min="1" max="30" value="10" class="slider">
+    </div>
+    <div class="pass-settings">
+      <label class="title">Password Settings</label>
+      <ul class="options">
+        <li class="option">
+          <input type="checkbox" id="lowercase" checked>
+          <label for="">Lowercase</label>
+        </li>
+        <li class="option">
+          <input type="checkbox" id="uppercase">
+          <label for="">Uppercase</label>
+        </li>
+        <li class="option">
+          <input type="checkbox" id="numbers">
+          <label for="">Numbers</label>
+        </li>
+        <li class="option">
+          <input type="checkbox" id="spaces">
+          <label for="">Space</label>
+        </li>
+        <li class="option">
+          <input type="checkbox" id="symbols">
+          <label for="">Special Charecters</label>
+        </li>
+        <li class="option">
+          <input type="checkbox" id="exc-duplicate">
+          <label for="">Exclude Duplicates</label>
+        </li>
+      </ul>
+    </div>
+<button class="generate-btn">Generate Password</button>
+  </div>
+</div>
+</body>
+</html>
